@@ -1,7 +1,7 @@
 {
-  "name": "coinselect",
-  "version": "3.1.13",
-  "description": "A transaction input selection module for bitcoin.",
+  "name": "@yaswap/yacoinjs-coinselect",
+  "version": "1.0.0",
+  "description": "A transaction input selection module for yacoin.",
   "keywords": [
     "coinselect",
     "coin",
@@ -16,12 +16,12 @@
     "optimizing",
     "bitcoin"
   ],
-  "homepage": "https://github.com/bitcoinjs/coinselect",
+  "homepage": "https://github.com/yaswap/yacoinjs-coinselect",
   "bugs": {
-    "url": "https://github.com/bitcoinjs/coinselect/issues"
+    "url": "https://github.com/yaswap/yacoinjs-coinselect/issues"
   },
   "license": "MIT",
-  "author": "Daniel Cousens",
+  "author": "Yaswap",
   "files": [
     "accumulative.js",
     "blackjack.js",
@@ -33,7 +33,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitcoinjs/coinselect.git"
+    "url": "https://github.com/yaswap/yacoinjs-coinselect.git"
   },
   "scripts": {
     "coverage": "nyc --check-coverage --branches 100 --functions 100 tape test/*.js",
