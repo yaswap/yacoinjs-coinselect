@@ -45,7 +45,6 @@ module.exports = {
     var tokenOutputs = outputs.filter(function (output) {
       return output.tokenName
     })
-    console.log('TACA ===> accumulativeToken, tokenUtxos = ', tokenUtxos, ', outputs = ', outputs, ', tokenOutputs = ', tokenOutputs)
 
     var inAccum = 0
     var inputs = []
@@ -62,7 +61,6 @@ module.exports = {
       if (inAccum < outAccum) continue
 
       var remainderToken = inAccum - outAccum
-      console.log('TACA ===> accumulativeToken, inAccum = ', inAccum, ', outAccum = ', outAccum, ', remainderToken = ', remainderToken)
       if (remainderToken > 0) {
         outputs = outputs.concat({ id: 'token_change', tokenName: tokenOutputs[0].tokenName, value: 0, token_value: remainderToken })
       }

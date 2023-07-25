@@ -60,7 +60,6 @@ module.exports = {
       if (inAccum < outAccum) continue
 
       var remainderToken = inAccum - outAccum
-      console.log('TACA ===> blackjackToken, inAccum = ', inAccum, ', outAccum = ', outAccum, ', remainderToken = ', remainderToken)
       if (remainderToken > 0) {
         outputs = outputs.concat({ id: 'token_change', tokenName: tokenOutputs[0].tokenName, value: 0, token_value: remainderToken })
       }

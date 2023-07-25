@@ -8,7 +8,6 @@ function utxoScore (x, feeRate) {
 }
 
 module.exports = function coinSelect (utxos, tokenUtxos, outputs, feeRate) {
-  console.log('TACA ===> yacoinjs-coinselect, utxos = ', utxos, ', tokenUtxos = ', tokenUtxos, ', outputs = ', outputs, ', feeRate = ', feeRate)
   utxos = utxos.concat().sort(function (a, b) {
     return utxoScore(b, feeRate) - utxoScore(a, feeRate)
   })
