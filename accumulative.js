@@ -43,7 +43,7 @@ module.exports = {
 
   accumulativeToken: function(tokenUtxos, outputs) {
     var tokenOutputs = outputs.filter(function (output) {
-      return output.tokenName
+      return output.tokenName && output.tokenScriptType === 'transfer'
     })
 
     var inAccum = 0
